@@ -21,3 +21,19 @@ document.getElementById('btn-Triangle').addEventListener('click', function(){
     // setElementValue('triangleArea', area);
     // addCalculation('Triangle', area);
 })
+
+document.getElementById('btn-rectangle').addEventListener('click', function(){
+    const inputWidth = getInputValue('inputWidth');
+    const inputLength = getInputValue('inputLength');
+    if(isNaN(inputWidth) || isNaN(inputLength)){
+        alert('Invalid Input');
+    }else{
+        const area = inputWidth * inputLength;
+        console.log(area);
+        const areaValue = getElementValue('rectangleArea')
+        console.log(areaValue);
+        setElementValue('rectangleArea', area);
+        addCalculation('Rectangle', area);        
+    }
+
+})

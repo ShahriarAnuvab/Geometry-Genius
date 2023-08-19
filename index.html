@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/geometry.css">
+</head>
+
+<body class="inter">
+    <header class="container mx-auto">
+        <div class="bg-cyan-200 flex items-center justify-between p-5 flex-col md:flex-row gap-5">
+            <h1 class="text-5xl font-bold text-[ #111111CC]">Interactive
+                <span class="block font-medium text-3xl">Geometry Genius</span>
+            </h1>
+            <button class="btn bg-cyan-400">Blog</button>
+        </div>
+        <main>
+            <section>
+                <!-- Triangle -->
+                <div>
+                    <div class="card md:w-96 bg-base-100 shadow-xl hover:bg-[#FBBCED]">
+                        <figure class="px-10 pt-10">
+                            <img src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Triangle</h2>
+                            <p class="text-base font-normal text-[#414141]">Area (A) = 0.5 x b x h </p>
+                            <p class="text-base font-normal text-[#414141]"><span>Trianle area:</span> <span id="triangleArea">00</span>cm </p>
+
+                            <div class="card-actions ">
+                                <input id="inputBase" type="number" placeholder="b" class="bg-[#F1F1F1] rounded-xl w-1/3  p-1"> <span>cm</span>
+                                <input id="inputHeight" type="number" placeholder="h" class="bg-[#F1F1F1] rounded-xl w-1/3 p-1 ml-3"> <span>cm</span>
+                                <button class="btn btn-primary w-10/12 ml-5 my-5" id="btn-Triangle">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rectangle -->
+                </div>
+            </section>
+            <!-- Area Calculation -->
+            <section>
+
+            </section>
+        </main>
+    </header>
+    <script src="./Scripts/functions.js"></script>
+        <script src="./Scripts/index.js"></script>
+</body>
+
+</html>

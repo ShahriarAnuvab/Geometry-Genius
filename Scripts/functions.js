@@ -16,13 +16,12 @@ function setElementValue(elementId, newValue) {
   element.innerText = newValue;
 }
 
-function addCalculation(areaType, area){
-  console.log(areaType+ " " + area);
+function addCalculation(areaType, area){;
   const addDiv = document.getElementById('addCalculation');
   const p = document.createElement('p');
   // p.innerText = areaType + " " + area;
   p.classList.add('m-5', 'text-center')
   const count =addDiv.childElementCount;
-  p.innerHTML = `${count+1}. ${areaType}: ${area} <span>cm</span><sup>2</sup> <button class="btn btn-sm">Convert</button>`
+  p.innerHTML = `${count+1}. ${areaType}: ${area} <span>cm</span><sup>2</sup>`
   addDiv.appendChild(p); 
 }
